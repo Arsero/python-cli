@@ -14,11 +14,11 @@ def list():
 
 
 @app.command()
-def add(task: str):
+def add(text: str):
     """
     Add a new task with TEXT.
     """
-    commands.add(task)
+    commands.add(text)
 
 
 @app.command()
