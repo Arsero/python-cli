@@ -2,21 +2,30 @@ from typing import Optional
 import typer
 from note import commands, __app_name__, __version__
 
-app = typer.Typer()
+app = typer.Typer("Note fast CLI")
 
 
 @app.command()
 def show():
+    """
+    Show all notes.
+    """
     commands.show()
 
 
 @app.command()
 def add(note: str):
+    """
+    Add a new note with TEXT.
+    """
     commands.add(note)
 
 
 @app.command()
 def clear():
+    """
+    Clear all notes.
+    """
     commands.clear()
 
 

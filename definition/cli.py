@@ -5,11 +5,14 @@ from larousse_api import larousse
 from rich.console import Console
 
 console = Console()
-app = typer.Typer()
+app = typer.Typer("Definition CLI")
 
 
 @app.command()
 def main(word: str):
+    """
+    Get a definition for a WORD
+    """
     if not word:
         typer.echo(f"{__app_name__} v{__version__}")
     else:
