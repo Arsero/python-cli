@@ -1,5 +1,5 @@
 import typer
-from definition import __app_name__, __version__
+from translate import __app_name__, __version__
 from rich.console import Console
 from googletrans import Translator
 
