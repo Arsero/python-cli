@@ -38,3 +38,11 @@ A command to translate a word from english to french. Doesn't work !! (reason : 
 python -m build
 pip install ./dist/python_cli-0.0.4-py3-none-any.whl
 ```
+
+## How to use
+
+Use the --help option to get all commands. Example :
+
+<p align="center">
+    <img src="resources/screenshots/example.png" alt="Image no available...">
+</p>
