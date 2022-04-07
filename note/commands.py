@@ -1,11 +1,9 @@
 import typer
 import os
-from note import __app_name__, __company_name__
-from appdirs import *
+from note import __filename__
 from datetime import date
 
-filename = os.path.join(user_data_dir(
-    __app_name__, __company_name__), "notes.txt")
+filename = __filename__
 
 
 def show():

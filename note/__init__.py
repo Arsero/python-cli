@@ -1,6 +1,11 @@
+import os
+from appdirs import *
+
 __app_name__ = "note"
 __company_name__ = "arsero"
-__version__ = "0.0.1"
+__version__ = "0.0.3"
+__filename__ = os.path.join(user_data_dir(
+    __app_name__, __company_name__), "notes.txt")
 
 (
     FILE_ERROR,
