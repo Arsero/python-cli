@@ -5,10 +5,9 @@ from todo.task import Task, TaskEncoder
 import json
 from rich.console import Console
 from rich.table import Table
-from todo import __app_name__, __company_name__
-from appdirs import *
+from todo import __filename__
 
-filename = os.path.join(user_data_dir(__app_name__, __company_name__), "tasks.txt")
+filename = __filename__
 
 
 def list():
