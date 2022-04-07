@@ -5,7 +5,7 @@ from larousse_api import larousse
 from rich.console import Console
 
 console = Console()
-app = typer.Typer("Definition CLI")
+app = typer.Typer(help="Definition CLI")
 
 
 @app.command()

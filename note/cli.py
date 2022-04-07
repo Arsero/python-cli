@@ -2,7 +2,7 @@ from typing import Optional
 import typer
 from note import commands, __app_name__, __version__
 
-app = typer.Typer("Note fast CLI")
+app = typer.Typer(help="Note fast CLI")
 
 
 @app.command()
